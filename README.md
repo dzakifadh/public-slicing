@@ -1,6 +1,6 @@
-# Public Slicing
+# HTML Slicing Project
 
-This repo contain static slicing from ui design to html. Fell free to fork for learning purpose.
+This repo contain static slicing from ui design (figma) to html. Fell free to fork for learning purpose.
 
 > React JS + Tailwindcss version will be release soon :heart_eyes:
 
@@ -75,6 +75,6 @@ I was motivated to create this project because I wanted to contribute on somethi
 
 ## Thank you
 
-To **[Netlify](https://www.netlify.com/)** to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
+To **[Netlify](https://www.netlify.com/)** as hosting provider used for this project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
 
-To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)**. I used it as a guide to make tidy commit message
+To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)**, I used it as a guide to make tidy commit message
