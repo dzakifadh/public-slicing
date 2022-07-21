@@ -1,0 +1,23 @@
+{
+	"name": "self",
+	"version": "1.0.0",
+	"description": "",
+	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel src/*.html src/projects/**/*.html --lazy",
+		"build": "parcel build src/**/*.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/packager-raw-url": "^2.6.2",
+		"@parcel/transformer-jsonld": "^2.6.2",
+		"@parcel/transformer-sass": "^2.6.2",
+		"parcel": "^2.6.2",
+		"posthtml-include": "^1.7.4"
+	},
+	"dependencies": {
+		"bootstrap": "^5.2.0-beta1"
+	}
+}

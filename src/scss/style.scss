@@ -1,0 +1,70 @@
+/* --------------------------------------------------------------------------
+ * Name           : Public Project - HTML Slicing
+ * File           : style.scss
+ * Version        : 1.0.0
+ * Author         : Dzaki Fadhlurrohman
+ * Author URI     : https://dzakifadh.vercel.app/
+ *
+ * Dzakifadh. Copyright 2022. All Rights Reserved.
+ * -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+ [TABLE OF CONTENT]
+-------------------------------------------------------------------------- */
+
+@import "variables";
+@import "breakpoints";
+@import "utilities";
+@import "components";
+@import "hamburger-menu";
+
+/* --------------------------------------------------------------------------
+1. Main Hero
+ -------------------------------------------------------------------------- */
+// * {
+// 	border: 2px solid orange;
+// }
+
+/* Not found page */
+.not-found {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+
+	h2 {
+		font-family: "Playfair Display", serif;
+	}
+	ul {
+		padding: 0;
+		margin-top: 24px;
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		a {
+			text-transform: capitalize;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				height: 1px;
+				width: 0;
+				background-color: black;
+				transition: 300ms;
+			}
+
+			&:hover {
+				&::before {
+					transition: 300ms;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+/* --------------------------------------------------------------------------
+ * Name           : Public Project - HTML Slicing
+ * File           : _hamburger-menu.scss
+ * Version        : 1.0.0
+ * Author         : Dzaki Fadhlurrohman
+ * Author URI     : https://dzakifadh.vercel.app/
+ *
+ * Dzakifadh. Copyright 2022. All Rights Reserved.
+ * -------------------------------------------------------------------------- */
+
+.hamburger-container {
+  width: 25px;
+  height: 18px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.2s;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    transform: rotate(0deg);
+    transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 1;
+    width: 100%;
+    border-radius: 50px;
+    left: 0;
+  }
+}
+
+.hamburger {
+  &-dark {
+    background-color: $dark;
+  }
+
+  &-light {
+    background-color: $white;
+  }
+
+  span {
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 8px;
+    }
+
+    &:nth-child(4) {
+      top: 16px;
+    }
+  }
+}
+
+label[aria-expanded="true"] {
+  > .hamburger-container {
+    > span {
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+  }
+}

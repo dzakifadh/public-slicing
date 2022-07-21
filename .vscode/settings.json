@@ -1,0 +1,12 @@
+{
+	"prettier.semi": true,
+	"prettier.singleQuote": false,
+	"prettier.resolveGlobalModules": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"prettier.printWidth": 300,
+	"css.validate": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
