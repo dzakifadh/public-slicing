@@ -2,17 +2,25 @@
 
 This repo contain static slicing from ui design to html. Fell free to fork for learning purpose.
 
-> :heart_eyes: React + tailwindcss version will be release soon
+> React + tailwindcss version will be release soon :heart_eyes:
 
 ## Features
 
-:star2: Modern UI Design
-:star2: Landing pages + dashboard
-:star2: Styled with Bootstrap v5.2 + SASS
-:star2: Fully Responsive
-:star2: Valid HTML5 & CSS3
-:star2: Optimized with Parcel as Build Tools
+:star2: Modern UI Design\
+:star2: Landing pages + Dashboard UI Design\
+:star2: Styled with Bootstrap v5.2 + SASS\
+:star2: Fully Responsive\
+:star2: Valid HTML5 & CSS3\
+:star2: Optimized with Parcel as Build Tools\
 :star2: Well organized documentation
+
+To view the demo: **[click here](https://figma-slicing.netlify.app/)**
+
+## Technologies used 🛠️
+
+- [Parcel](https://parceljs.org/) - Bundler
+- [Bootstrap 5](https://getbootstrap.com/) - CSS Framework
+- [Sass](https://sass-lang.com/documentation) - CSS extension language
 
 ## Getting Started :rocket:
 
@@ -51,3 +59,22 @@ $ npm install
 # Start the development server
 $ npm run dev
 ```
+
+## Badges 🔖
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cc81e50-b58c-4575-83dd-c9fd28c4b963/deploy-status)](https://app.netlify.com/sites/figma-slicing/deploys)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments 🎁
+
+I was motivated to create this project because I wanted to contribute on something useful for the dev community
+
+## Thank you
+
+To **[Netlify](https://www.netlify.com/)** to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
+
+To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)** I used it as a guide to make tidy commit message
