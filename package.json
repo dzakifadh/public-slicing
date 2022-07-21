@@ -1,7 +1,7 @@
 {
-	"name": "self",
+	"name": "public-slicing",
 	"version": "1.0.0",
-	"description": "",
+	"description": "This repo contain static slicing from ui design to html",
 	"source": "src/index.html",
 	"scripts": {
 		"dev": "parcel src/*.html src/projects/**/*.html --lazy",

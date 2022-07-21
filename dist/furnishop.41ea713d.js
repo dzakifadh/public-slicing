@@ -533,6 +533,6 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"fQsid":[function(require,module,exports) {
 
-},{}]},["8jLrW","fQsid"], "fQsid", "parcelRequire96a7")
+},{}]},["8jLrW","fQsid"], "fQsid", "parcelRequire1ff3")
 
 //# sourceMappingURL=furnishop.41ea713d.js.map
