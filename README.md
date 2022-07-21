@@ -2,7 +2,7 @@
 
 This repo contain static slicing from ui design to html. Fell free to fork for learning purpose.
 
-> React + tailwindcss version will be release soon :heart_eyes:
+> React JS + Tailwindcss version will be release soon :heart_eyes:
 
 ## Features
 
@@ -14,7 +14,7 @@ This repo contain static slicing from ui design to html. Fell free to fork for l
 :star2: Optimized with Parcel as Build Tools\
 :star2: Well organized documentation
 
-To view the demo: **[click here](https://figma-slicing.netlify.app/)**
+To view the demo: **[https://figma-slicing.netlify.app/](https://figma-slicing.netlify.app/)**
 
 ## Technologies used 🛠️
 
@@ -77,4 +77,4 @@ I was motivated to create this project because I wanted to contribute on somethi
 
 To **[Netlify](https://www.netlify.com/)** to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
 
-To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)** I used it as a guide to make tidy commit message
+To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)**. I used it as a guide to make tidy commit message
