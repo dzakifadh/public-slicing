@@ -5,7 +5,7 @@
 	"source": [
 		"./src/index.html",
 		"./src/projects/default/index.html",
-		"./src/projects/furnishop/index.html"
+		"./src/projects/damoty-speed/index.html"
 	],
 	"scripts": {
 		"dev": "parcel -p 3000 --lazy",
