@@ -1,7 +1,486 @@
+/* --------------------------------------------------------------------------
+ * Name           : Damoty Speed - HTML Slicing Project
+ * File           : style.scss
+ * Version        : 1.0.0
+ * Author         : Dzaki Fadhlurrohman
+ * Author URI     : https://dzakifadh.vercel.app/
+ *
+ * Dzakifadh. Copyright 2022. All Rights Reserved.
+ * -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+ [TABLE OF CONTENT]
+ 1. General
+-------------------------------------------------------------------------- */
+
+$dark: #0f0e17;
+$light: #fff;
+$orange: #ff8906;
+$gray: #a7a9be;
+$gray-100: #858492;
+$gray-200: #fafafa;
+$gray-300: #7b7b7b;
+
+/* --------------------------------------------------------------------------
+1. General
+ -------------------------------------------------------------------------- */
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 16px;
+	font-weight: 500;
+	color: $gray;
+	background-color: $gray-200;
 }
-h1 {
-	font-family: "Abril Fatface", cursive;
+a {
+	color: $light;
+	text-decoration: none;
+
+	&:hover {
+		color: $light;
+	}
+}
+.btn {
+	padding: 14px 28px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	&-transparent {
+		color: $light;
+	}
+
+	&-primary {
+		background-color: $orange;
+		color: $light;
+
+		span {
+			color: $light;
+		}
+
+		&:hover {
+			color: $light;
+		}
+
+		&-transparent {
+			color: $orange;
+			background-color: rgba($color: $orange, $alpha: 0.1);
+
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+}
+
+.form-control {
+	border-radius: 0;
+	&:focus {
+		color: inherit;
+		background-color: $dark;
+		box-shadow: none;
+	}
+}
+
+.form-select {
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.card-client {
+	margin-top: -100px;
+	background-color: $light;
+	padding: 56px 40px;
+	box-shadow: 0px 20px 20px rgba(178, 178, 178, 0.1);
+}
+
+#logo-brands .test {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		max-width: 100%;
+		user-select: none;
+	}
+}
+
+.card-service {
+	background-color: $light;
+	padding: 24px;
+
+	&-title {
+		display: inline-flex;
+		align-items: center;
+		gap: 12px;
+		margin-bottom: 14px;
+
+		h6 {
+			font-weight: 600;
+			color: $dark;
+			margin-bottom: 0;
+		}
+	}
+
+	&-icon {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba($color: $orange, $alpha: 0.1);
+	}
+
+	p {
+		color: $gray-300;
+		line-height: 26px;
+	}
+}
+.card-visitor {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	padding: 20px;
+	background: $light;
+	box-shadow: 0px 20px 20px rgba($dark, 0.05);
+
+	&-title {
+		line-height: 24px;
+		color: $dark;
+		margin-bottom: 8px;
+	}
+	strong {
+		font-weight: 600;
+		font-size: 24px;
+		color: $dark;
+	}
+	.statistic-data {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 14px;
+	}
+	.statistic-bars {
+		display: flex;
+		gap: 10px;
+		align-items: flex-end;
+
+		.statistic-bar {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 4px;
+		}
+		.bar {
+			width: 24px;
+			max-height: 56px;
+			min-height: 14px;
+			background-color: rgba($color: $orange, $alpha: 0.1);
+
+			&.bar-1 {
+				height: 14px;
+			}
+			&.bar-2 {
+				height: 32px;
+			}
+			&.bar-3 {
+				height: 24px;
+			}
+			&.bar-4 {
+				height: 40px;
+			}
+			&.bar-5 {
+				height: 56px;
+				background-color: $orange;
+			}
+			&.bar-6 {
+				height: 32px;
+			}
+			&.bar-7 {
+				height: 56px;
+			}
+		}
+		span {
+			font-weight: 400;
+			font-size: 12px;
+			color: $gray-300;
+		}
+	}
+}
+.card-pros-information {
+	position: absolute;
+	padding: 24px;
+	background: $light;
+	box-shadow: 0px 20px 20px rgba($dark, 0.05);
+	bottom: -20px;
+	right: 40px;
+	text-align: center;
+
+	&-icon {
+		background-color: rgba($color: $orange, $alpha: 0.1);
+		width: 56px;
+		height: 56px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+		margin: auto;
+	}
+
+	p {
+		line-height: 24px;
+		text-align: center;
+		text-transform: capitalize;
+		font-weight: 600;
+		color: $dark;
+		margin-top: 10px;
+	}
+	a {
+		font-weight: 500;
+		text-transform: capitalize;
+		color: $orange;
+	}
+}
+/* --------------------------------------------------------------------------
+2. Hamburger Menu
+ -------------------------------------------------------------------------- */
+.hamburger-container {
+	width: 25px;
+	height: 18px;
+	position: relative;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: 0.2s;
+
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		transform: rotate(0deg);
+		transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+		opacity: 1;
+		width: 100%;
+		border-radius: 50px;
+		left: 0;
+	}
+}
+
+.hamburger {
+	&-dark {
+		background-color: $dark;
+	}
+
+	&-light {
+		background-color: $light;
+	}
+
+	span {
+		&:nth-child(1) {
+			top: 0px;
+		}
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			top: 8px;
+		}
+
+		&:nth-child(4) {
+			top: 16px;
+		}
+	}
+}
+
+label[aria-expanded="true"] {
+	> .hamburger-container {
+		> span {
+			&:nth-child(1) {
+				top: 18px;
+				width: 0%;
+				left: 50%;
+			}
+
+			&:nth-child(2) {
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+
+			&:nth-child(4) {
+				top: 18px;
+				width: 0%;
+				left: 50%;
+			}
+		}
+	}
+}
+
+section.section-gap {
+	padding: 70px 0;
+
+	h2.title {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 48px;
+		color: $dark;
+	}
+	p.subtitle {
+		font-weight: 400;
+		color: $gray-300;
+		max-width: 400px;
+		line-height: 26px;
+	}
+}
+/* --------------------------------------------------------------------------
+2. Navbar
+ -------------------------------------------------------------------------- */
+.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	padding: 30px 0;
+	transition: 0.3s;
+
+	&-nav {
+		gap: 20px;
+	}
+
+	&-button {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+}
+/* --------------------------------------------------------------------------
+3. Hero
+ -------------------------------------------------------------------------- */
+.hero {
+	background-color: $dark;
+	text-align: center;
+	width: 100%;
+	min-height: 800px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	background-image: url("./images/world-map.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.sub-title {
+		color: $orange;
+	}
+	h1 {
+		color: $light;
+		font-size: 64px;
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 1.4;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1.6;
+	}
+}
+
+/* --------------------------------------------------------------------------
+3. Form Inline
+ -------------------------------------------------------------------------- */
+.form-inline {
+	input {
+		width: 100%;
+	}
+	input,
+	button,
+	select {
+		padding: 20px 24px;
+		border: 0;
+	}
+	select {
+		padding: 20px 10px;
+		background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M19%208.5L12%2015.5L5%208.5%22%20stroke%3D%22%23858492%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+		background-size: auto;
+		border-radius: 0;
+		margin-right: 20px;
+	}
+
+	input,
+	select {
+		background-color: $dark;
+		color: $gray-100;
+		&::placeholder {
+			color: $gray-100;
+		}
+		&:focus-visible {
+			outline: none;
+		}
+	}
+}
+
+/* --------------------------------------------------------------------------
+3. Brands
+ -------------------------------------------------------------------------- */
+.brands {
+	h3 {
+		color: $dark;
+		font-size: 24px;
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 36px;
+		margin-right: 40px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+3. Services
+ -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+3. List Icon
+ -------------------------------------------------------------------------- */
+.list-vertical {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	li {
+		position: relative;
+		padding-left: 34px;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&.icon-outline {
+		color: $dark;
+		li {
+			&::before {
+				content: url("./images/checklist-outline.svg");
+			}
+		}
+	}
+	&.icon-solid {
+		color: $gray-300;
+		font-weight: 400;
+		li {
+			&::before {
+				content: url("./images/checklist.svg");
+			}
+		}
+	}
 }
