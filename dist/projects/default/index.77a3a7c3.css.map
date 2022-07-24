@@ -1,1 +1,0 @@
-{"mappings":"AAAA;;;;;AAIA","sources":["src/projects/default/style.scss"],"sourcesContent":["body {\n\tfont-family: \"Lato\", sans-serif;\n\tfont-size: 16px;\n}\nh1 {\n\tfont-family: \"Abril Fatface\", cursive;\n}\n"],"names":[],"version":3,"file":"index.77a3a7c3.css.map","sourceRoot":"/__parcel_source_root/"}
