@@ -2,10 +2,14 @@
 	"name": "public-slicing",
 	"version": "1.0.0",
 	"description": "This repo contain static slicing from ui design to html",
-	"source": "src/index.html",
+	"source": [
+		"./src/index.html",
+		"./src/projects/default/index.html",
+		"./src/projects/furnishop/index.html"
+	],
 	"scripts": {
-		"dev": "parcel src/*.html src/projects/**/*.html --lazy",
-		"build": "parcel build src/**/*.html"
+		"dev": "parcel -p 3000 --lazy",
+		"build": "parcel build"
 	},
 	"keywords": [],
 	"author": "",

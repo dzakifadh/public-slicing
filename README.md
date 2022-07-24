@@ -2,7 +2,7 @@
 
 This repo contain static slicing from ui design (figma) to html. Fell free to fork for learning purpose.
 
-> React JS + Tailwindcss version will be release soon :heart_eyes:
+> React.js + Tailwind CSS version will be release soon :heart_eyes:
 
 ## Features
 
@@ -20,7 +20,7 @@ To view the demo: **[https://figma-slicing.netlify.app/](https://figma-slicing.n
 
 - [Parcel](https://parceljs.org/) - Bundler
 - [Bootstrap 5](https://getbootstrap.com/) - CSS Framework
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
+- [Sass](https://sass-lang.com/documentation) - CSS Superpowers
 
 ## Getting Started :rocket:
 
@@ -77,4 +77,4 @@ I was motivated to create this project because I wanted to contribute on somethi
 
 To **[Netlify](https://www.netlify.com/)** as hosting provider used for this project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
 
-To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)**, I used it as a guide to make tidy commit message
+To **[https://www.conventionalcommits.org/](https://github.com/conventional-commits/conventionalcommits.org)**, as a guide to make tidy commit message

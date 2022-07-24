@@ -1,1 +1,1 @@
-{"mappings":"","sources":["src/projects/furnishop/style.scss"],"sourcesContent":[null],"names":[],"version":3,"file":"index.db230369.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA;;;;;AAIA","sources":["src/projects/furnishop/style.scss"],"sourcesContent":["body {\n\tfont-family: \"Lato\", sans-serif;\n\tfont-size: 16px;\n}\nh1 {\n\tfont-family: \"Abril Fatface\", cursive;\n}\n"],"names":[],"version":3,"file":"index.db230369.css.map","sourceRoot":"/__parcel_source_root/"}

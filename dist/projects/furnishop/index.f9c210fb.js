@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"8jLrW":[function(require,module,exports) {
+})({"etcpw":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0e2b7f1a41ea713d";
+module.bundle.HMR_BUNDLE_ID = "d865dca3f9c210fb";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,8 +531,9 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"fQsid":[function(require,module,exports) {
+},{}],"aarDP":[function(require,module,exports) {
+console.log("Sub");
 
-},{}]},["8jLrW","fQsid"], "fQsid", "parcelRequire1ff3")
+},{}]},["etcpw","aarDP"], "aarDP", "parcelRequire1ff3")
 
-//# sourceMappingURL=furnishop.41ea713d.js.map
+//# sourceMappingURL=index.f9c210fb.js.map
